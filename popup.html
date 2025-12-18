@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Tweet History</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📜 推文历史</h1>
+      <div class="stats">
+        <span id="count">0</span> 条记录
+      </div>
+    </header>
+    
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="搜索推文...">
+      <button id="exportBtn" title="导出">📥</button>
+      <button id="clearBtn" title="清空">🗑️</button>
+    </div>
+    
+    <div id="tweets" class="tweets-list"></div>
+    
+    <div id="empty" class="empty-state">
+      <p>暂无保存的推文</p>
+      <p class="hint">浏览 X 时会自动保存推文</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
